@@ -19,7 +19,7 @@ export default function Index() {
   const [editTodo, setEditTodo] = useState<boolean>(actionData?.editTodo ? actionData?.editTodo : false);
   const [updatedTodo, setUpdatedTodo] = useState<string>('Lorem ipsum dolor sit, amet consectetur adipisicing elit. met consectetur adipisicing elit. met consectetur adipisicing elit.');
   const navigate = useNavigate();
-  
+
   return <div className="h-screen grid">
     <div>
       <div className="bg-blue-700 py-4 px-2">
@@ -32,7 +32,13 @@ export default function Index() {
             <a href="">Rate us</a>
             <a href="">Statistics</a>
           </div>
-          <div id="userProfileDropdown">user-photo</div>
+          <div id="userProfileDropdown">
+            <img
+              src="https://img.freepik.com/premium-psd/smiling-3d-cartoon-man_975163-772.jpg?w=826"
+              alt="GitHub Avatar"
+              className="w-8 rounded-full border shadow-md"
+            />
+          </div>
         </div>
       </div>
 
